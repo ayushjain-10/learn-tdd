@@ -53,6 +53,9 @@ should be placed in `tests/authorService.test.ts`.
 
 Briefly explain a limitation of the tests in `tests/authorSchema.test.ts` in the space below.
 
+The tests in authorSchema.test.ts only verify the schema validation and virtual properties in isolation, but they don't test the actual database operations. While they mock the database methods like countDocuments and find, they don't verify the actual interaction with MongoDB or test the real database operations. This means that while the schema structure and virtual properties are well-tested, there could be issues with actual database operations that wouldn't be caught by these tests.
+
+
 
 
 ## Part 3
